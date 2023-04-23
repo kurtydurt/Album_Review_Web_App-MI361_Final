@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1>{{usr}}'s Reviews:</h1>
+{% for rev in session['users'][usr][1] %}
+    {{rev}} - {{session['users'][usr][1][rev]['artist']}} <br>
+    {{session['users'][usr][1][rev]['text']}} <br>
+    <br>
+{% endfor %}
+<form method="POST" action="#">
+    <input type="submit" value="Back" name = "back">
+</form>
+</html>

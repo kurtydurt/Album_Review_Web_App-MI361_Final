@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1>List of Users:</h1>
+{% for u in session['users'] %}
+    <p> {{u}}</p>
+{% endfor %}
+<form method="POST" action="#">
+    <input type="submit" value="Back" name = "back">
+</form>
+</html>

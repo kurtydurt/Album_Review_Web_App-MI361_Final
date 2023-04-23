@@ -1,0 +1,2 @@
+musicbrainzngs~=0.7.1
+Flask~=2.2.3
